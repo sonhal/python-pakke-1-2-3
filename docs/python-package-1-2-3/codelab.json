@@ -1,0 +1,19 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2019-09-16T13:41:11+02:00",
+  "id": "python-package-1-2-3",
+  "duration": 0,
+  "title": "Python package in 1-2-3",
+  "summary": "This tutorial walks you through the anotomy and actions of a Python package",
+  "source": "pp-123.md",
+  "theme": "",
+  "status": [
+    "draft"
+  ],
+  "category": null,
+  "tags": [],
+  "url": "python-package-1-2-3"
+}
