@@ -66,3 +66,6 @@ typings/
 
 #binary
 claat
+
+# Python
+venv
