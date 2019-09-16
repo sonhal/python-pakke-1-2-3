@@ -3,8 +3,8 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2019-09-16T13:41:11+02:00",
-  "id": "python-package-1-2-3",
+  "updated": "2019-09-16T15:50:11+02:00",
+  "id": "python-package-tutorial",
   "duration": 0,
   "title": "Python package in 1-2-3",
   "summary": "This tutorial walks you through the anotomy and actions of a Python package",
@@ -15,5 +15,6 @@
   ],
   "category": null,
   "tags": [],
-  "url": "python-package-1-2-3"
+  "feedback": "https://github.com/sonhal/python-pakke-1-2-3/issues",
+  "url": "python-package-tutorial"
 }
