@@ -33,12 +33,64 @@
 
       </google-codelab-step>
     
+      <google-codelab-step label="Module" duration="0">
+        <h2 is-upgraded>There are actually three different ways to define a module in Python</h2>
+<ol type="1">
+<li>A module can be written in Python itself.</li>
+<li>A module can be written in C and loaded dynamically at run-time, like the re (regular expression) module.</li>
+<li>A built-in module is intrinsically contained in the interpreter, like the itertools module.</li>
+</ol>
+<p>A module&#39;s contents are accessed the same way in all three cases: with the import statement.</p>
+
+
+      </google-codelab-step>
+    
       <google-codelab-step label="Modules" duration="0">
-        
+        <p>Files containing Python code are refered to as modules. Modules can contain a Python script<br>to be ran or functions and/of classes to be imported.</p>
+<p>THe module used to run a script is referd to as the <code>main module</code>.</p>
+<p>Example module:</p>
+<p>We write the following code to a file named fibo.py</p>
+<pre><code># Fibonacci numbers module
+
+def fib(n):    # write Fibonacci series up to n
+    a, b = 0, 1
+    while a &lt; n:
+        print(a, end=&#39; &#39;)
+        a, b = b, a+b
+    print()
+</code></pre>
+<p>it can be imported into another like so:</p>
+<pre><code>import fibo
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Executing modules" duration="0">
+        <p>We run Python modules like this:</p>
+<pre><code>python fibo.py &lt;arguments&gt;
+</code></pre>
+<p>The code in the module will be executed just as it would if you imported it. But with a standard available argument <code>__name__</code> set to be equal <code>&#34;__main__&#34;</code>.</p>
+<p><em>Making the following run only when executed as a main module.</em></p>
+<pre><code>if __name__ == &#34;__main__&#34;:
+    import sys
+    fib(int(sys.argv[1]))
+</code></pre>
+<p>Now the file works as a importable script and as a executable module. Success!</p>
+
 
       </google-codelab-step>
     
       <google-codelab-step label="Packages" duration="0">
+        <p>A Python package is most often represented as a regular directory containing a <code>__init__.py</code>file. As of Python 3.4 the <code>__init__.py</code>is not necessary to use the directory as a package but it is the common practice.</p>
+<h3 is-upgraded>Note</h3>
+<p>Packages are modules! But they are special modules. They are modules that can contain other modules.</p>
+<p><strong>Package modules have a path attribute</strong></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Executing Packages" duration="0">
         
 
       </google-codelab-step>
@@ -49,7 +101,20 @@
       </google-codelab-step>
     
       <google-codelab-step label="Python package layout" duration="0">
-        
+        <p>Typical Python package layout</p>
+<pre><code>project_name/
+    README.(rst/md)
+    docs/
+    package_name/
+        __init__.py
+        source.py
+        sub_package_1/
+            __init__.py
+    tests/
+        test_code.py
+
+</code></pre>
+
 
       </google-codelab-step>
     
