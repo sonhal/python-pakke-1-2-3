@@ -1,1 +1,1 @@
-[Python package toturial(python-package-tutorial/index.html)
+[Python package toturial](python-package-tutorial/index.html)
